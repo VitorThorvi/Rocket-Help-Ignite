@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "rockethelp-thorvi",
+    "slug": "rockethelp-thorvi",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
