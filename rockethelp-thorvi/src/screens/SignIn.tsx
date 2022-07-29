@@ -21,6 +21,7 @@ export function SignIn() {
             return Alert.alert('Entrar', 'Informe e-mail e senha');
         }
         setIsLoading(true);
+
         auth().signInWithEmailAndPassword(email, password)
             .catch((error) => {
                console.log(error.code);
@@ -35,6 +36,7 @@ export function SignIn() {
                if(error.code === 'auth/user-not-found') {
                    return Alert.alert('Entrar', 'Usuário não cadastrado.');
                }
+               return Alert.alert('Entrar', 'Houve um erro inesperado durante o processo de login.')
             });
     }
 
